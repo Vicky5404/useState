@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Counter from "./usestate/Counter";
+import Text from "./usestate/Text";
+import MultipleStates from "./usestate/MultipleStates";
+import Toggle from "./usestate/Toggle";
+import Checkbox from "./usestate/Checkbox";
+  function button(){
+    return(
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
-
-export default App;
+      <div className="h-full w-full bg-red-600">
+        <Counter/>
+        <Text/>
+        <Toggle/>
+        <MultipleStates/>
+        <Checkbox/>
+      </div>
+    )
+  }
+  export default button
